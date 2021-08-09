@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+
+header { padding: 0 30px 55px; background: linear-gradient(#f2f2f2);}
+
+header div { position: absolute; left: 0; top: 0; z-index: 30; padding: 0 232px; height:100px; width:100%; box-sizing: border-box; background-color: #042e6f; line-height: 120px;} 
+header div .user{color: #fff; font-size: 28px; position: absolute; left: 150px;}
+header div .log{color: #fff; font-size: 17px; position: absolute; right: 100px; }
+
+header .logout{position: absolute;}
+/*header #lnb nav { position: relative;  border-bottom: 1px solid #042e6f; text-align: center; font-size: 0;}*/
+
+
+
+
+
+.contents { position:absolute; right:540px; width: 800px; margin-top: 0px;}
+.h2 { position: relative; padding: 55px 0 53px; font-size: 36px;  line-height: 100%; text-align: center; font-weight: normal;}
+.h2:after { content: ""; position: absolute; left: 50%; bottom: 0; width: 50px; height: 1px; background: #aaa; transform: translateX(-50%);}
+.h2 + p { padding:46px 0 54px; font-size: 18px; color:#666; text-align: center; line-height: 30px;}
+.h3 { margin: 50px 0 20px; font-size:18px; color:#222; font-weight: normal; text-align: center;}
+.h3:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 4px; height: 4px; background: #00a5e1; vertical-align:5px;}
+
+
+
+
+.step { display: flex; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;}
+
+.step li { flex: 1; position: relative; padding: 22px 0; font-size: 11px; color:#a5a5a5; text-align: center; line-height: 100%;}
+.step li:after { content: ""; position: absolute; right: 0; top: 50%; width: 12px; height: 19px; transform: translate(-50%, -50%); background: url("../images/icon.png") no-repeat -304px -58px;}
+.step li:last-child:after { display: none;}
+.step li div { padding: 8px 0 0; font-size: 18px; color:#a5a5a5;}
+.step li.on { color:#222;}
+.step li.on div { color:#00ade8;}
+
+
+
+
+/* 테이블 디자인*/
+input.type1 { position: absolute; left: -4000%;}
+
+table.type1{width: 500px;}
+.text1{position: relative; font-size: 30px; font-weight: none; color: #222; line-height: 85px; margin-left: 320px; font-weight: bold;}
+table.type1{border-top: 2px solid #042e6f; border-bottom: 1px solid #999; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+table.type1 th,
+table.type1 td{border-top: 1px solid #ccc;  border-right: 1px solid #ccc;}
+table.type1 th :first-child{border-left: none;}
+table.type1 tr:first-child th,
+table.type1 tr:first-child td{border-top: none;}
+
+table.type1 th {display:inline-block; width:50px; line-height:30px; padding:10px; text-align: center; font-weight: normal; font-size:13px; color: #222;}
+table.type1 th.content{height: 390px; line-height: 400px;}
+table.type1 th.contents1{height: 50px; line-height: 60px;}
+table.type1 th.contents2{height: 40px; line-height: 50px;}
+
+table.type1 td{padding: 0px 25px; color: #777;} /*오버플로우 칼라 텍스트 투명하게 하기*/
+
+table.type1 td input[type="text"]{border:0; height: 38px; line-height: 38px; color: #000; }
+table.type1 th input[type="text"]{border:0; height: 38px; line-height: 38px;}
+
+
+table.type1 td >div{padding: 10px 0 0;}
+table.type1 td:first-child {padding: 0;} 
+
+table.type1 .col_width_10{width: 100%;}
+
+
+/*텍스트마이닝 디자인*/
+
+.keyword-item{position: absolute; top:60px; left:300px;}
+
+.menu .Mtext{width: 432px; height:288px; border-bottom: 1px solid #999; border-left: 1px solid #ccc; border-right: 1px solid #ccc; margin-bottom: 20px; border-top: 2px solid #042e6f; background: url(../images/txt.png) }
+.menu .text2{display:block; position:relative; font-size: 22px; font-weight: none; color: #222; margin-top: 140px; margin-bottom: 10px;}
+.menu .script{width: 432px; height:700px; border-bottom: 1px solid #999; border-left: 1px solid #ccc; border-right: 1px solid #ccc;  border-top: 2px solid #042e6f;  }
+.menu .text3{display:block; margin:10px 0; font-size: 22px; font-weight: none; color: #222;}
+
+.btn{position:absolute; width:180px; height:50px; border: 0; right :590px; margin-top: 1180px; background-color: #042e6f; color: #fff;}
+.btn .d{position: absolute; padding: 0 0 0 60px; bottom: 14px; font-size: 18px; font-weight: normal;}
+
+
+
+
+
+/*버튼 디자인*/
+
+
+.back{    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #999;
+    position: absolute;
+    top: 900px;
+    text-align: center;
+    line-height: 40px;
+    left: 1400px;
+    background: url(../../images/back.png);}
+
+
+
+
+
+
+
+
+
+

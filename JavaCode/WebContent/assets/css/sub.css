@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+
+/* 회원가입 순서부분 */
+.step { display: flex; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;}
+
+.step li { flex: 1; position: relative; padding: 22px 0; font-size: 11px; color:#a5a5a5; text-align: center; line-height: 100%;}
+.step li:after { content: ""; position: absolute; right: 0; top: 50%; width: 12px; height: 19px; transform: translate(-50%, -50%); background: url("../../images/icon.png") no-repeat -304px -58px;}
+.step li:last-child:after { display: none;}
+.step li div { padding: 8px 0 0; font-size: 18px; color:#a5a5a5;}
+.step li.on { color:#222;}
+.step li.on div { color:#00ade8;}
+
+
+/* 개인정보동의*/
+.agree_box { overflow: auto; margin: 0 0 28px; padding: 35px 30px; height: 152px; border-top: 2px solid #042e6f; border-bottom: 1px solid #999;}
+.agree_box h4 { padding: 0 0 12px; font-size: 17px; color:#222; line-height: 100%; font-weight: normal;}
+.agree_box h5 { padding: 15px 0 8px; font-size: 14px; color:#222; font-weight: normal; line-height: 100%;}
+.agree_box p { line-height: 26px; font-size: 14px; color:#777;}
+.agree_box p + h4,
+.agree_box ul + h4 { padding-top: 30px; }
+.agree_box ol + h4 { padding-top: 35px; }
+.agree_box li { font-size: 14px; color:#777; line-height: 26px;}
+.agree_box > ul > li:before { content: ""; display: inline-block; margin: 0 7px 0 0; width: 2px; height: 2px; background: #888; vertical-align:middle;}
+.agree_box > ul > li ul { padding: 0 0 0 9px;}
+.agree_box > ol > li ol { padding: 0 0 0 12px;}
+.agree_box.ovn { overflow: visible; height: auto;}
+
+
+/*회원가입 성공 페이지*/
+.ok{margin-top: 50px;
+    display: flex;
+     padding: 25px 30px 10px 0px;
+    margin-left: 300px;}
+.ok .clear img {width: 169px; height:170px;}
+.ok .clear li{float: left;}
+.ok .clear .ment{position:relative; padding: 70px 0px 0px 20px; bottom: 15px;}
+.ok .clear .ment h2{font-size: 25px; color:333#;}
+.ok  .clear .ment span{line-height: 25px; font-size: 15px;}
+
+/*로그인 페이지*/
+.login{padding: 10px 0px 50px 0px; margin-left: 400px;}
+.login .top {position: relative; width:400px; }
+.login .top li {padding: 0 0 9px;}
+.login .top li label{display: inline-block; width: 63px; font-size: 12px; color: #464646; font-family: dotum; font-weight: bold;}
+.login .top li input [type="text"],
+.login .top li input [type="password"]{width: 144px; height: 29px; padding: 0; border-color: #d9d9d9;}
+.login .top li .btn{position: absolute; right: 0; top: 10px;}
+.login .top li button{display: block; width: 109px; height: 67px; background: #4876ee; 
+border: 1px solid #4876ee; font-size: 17px; color: #fff; text-align: center; line-height: 69px; font-weight: bold;}
+.login .top li.save{padding: 0 0 0 59px; }
+.login .top li.save label{width: auto; font-weight: normal; padding:}
+.login .btm{padding: 0 0 0 80px;
+    /* bottom: 100px; */
+    margin-bottom: px;
+    top: x;
+    position: relative;
+    bottom: 60px;}
+.login .btm li{padding: 0 0 0 9px; color: #; font-size: 12px; color: rgb(56, 61, 65); font-size: 12px; font-family: dotum; line-height: 24px; position: relative;}
+.login .btm li a{margin: 0 0 0 10px; font-size: 12px; font-family: dotum; font-weight: bold; color: #4876ee; text-decoration: underline;} 
+.login .btm li:before{content:""; position: absolute; left: 0; top: 50%; right: 10%; width: 6px; height: 1px; background:#4876ee; transform: translateY(-50%);}
+
+
+
+.loginbtn{width: 150px;
+    height: 60px;
+    position: relative;
+    margin-left: 880px;
+    top: 30px;
+    margin-bottom: 1;
+    margin-top: px;
+    background: #4876ee;
+    color: #fff;
+    font-size: 17px;
+    top: px;
+    bottom: px;
+    bottom: px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn{    
+	width: 150px;
+    height: 80px;
+    position: relative;
+    margin-left: 310px;
+    margin-top: px;
+    background: #4876ee;
+    color: #fff;
+    font-size: 17px;
+    top: px;
+    bottom: px;
+    bottom: 110px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+.small{    width: 500px;
+
+    margin-top: 100px;
+    margin-left: 80px;}   
+

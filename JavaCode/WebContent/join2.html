@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>회원정보입력</title>
+<link rel="stylesheet" type="text/css" href="assets/css/default.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/sub.css">
+
+<!-- javascript -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/Check.js"></script>
+
+</head>
+
+
+<div class="contents">
+	<h2 class="h2">회원가입</h2>
+	<p>
+		회의록 제목을 통해 편리하게 회의록을 관리해보세요 <br>회원이 되시면 회의록만의 혜택과 서비스를 누릴 수 있습니다
+	</p>
+	<ol class="step">
+		<li>STEP1
+			<div>약관동의</div>
+		</li>
+		<li class="on">STEP2
+			<div>회원정보입력</div>
+		</li>
+		<li>STEP3
+			<div>가입완료</div>
+		</li>
+	</ol>
+
+	<form action="JoinCon" method="post" id="regForm">
+
+		<h3 class="h3">회원정보 기입</h3>
+
+		<table class="type1">
+			<caption></caption>
+			<colgroup>
+				<col style="width: 170px">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th><span>필수입력</span>이름</th>
+					<td><input type="text" id="name" name="name"></td>
+				</tr>
+
+				<tr>
+					<th><span>필수입력</span>성별</th>
+					<td><input type='radio' name='gender' value='female'
+						class="radio" /> <label for="chk_1">여성</label> <input
+						type='radio' name='gender' value='male' class="radio" /> <label
+						for="chk1_2">남성</label></td>
+				</tr>
+
+
+				<tr>
+					<th><span>필수입력</span>아이디</th>
+					<td><input type="text" style="width: 300px" id="id" name="id">
+						<button class="btn_type3" type="button" id="idChk"
+							onclick="fn_idChk();" value="N">중복확인</button> <span class="info">아이디
+							입력 후 아이디 중복확인 버튼을 클릭해주세요</span></td>
+				</tr>
+
+
+
+				<tr>
+					<th><span>필수입력</span>비밀번호</th>
+					<td><input type="password" style="width: 300px" id="pw"
+						name="pw" maxlength="10"> <span class="info">비밀번호는
+							6~10자리로 입력해주세요</span></td>
+				</tr>
+
+				<tr>
+					<th><span>필수입력</span>비밀번호확인</th>
+					<td><input type="password" style="width: 300px" id="pwCheck"
+						name="pwCheck" maxlength="10"></td>
+				</tr>
+
+
+				<tr>
+					<th><span>필수입력</span>이메일주소</th>
+					<td><input type="text" style="width: 194px" id="email1"
+						name="email1"> @ <input type="text" style="width: 194px"
+						id="email2" name="email2"></td>
+				</tr>
+
+				<tr>
+					<th>전화번호</th>
+					<td><select name="phone1">
+							<option value="02">02</option>
+							<option value="062">062</option>
+							<option value="010">010</option>
+							<option value="011">011</option>
+					</select> <input type="text" style="width: 210px" name="phone2"> <input
+						type="text" style="width: 210px" name="phone3"></td>
+				</tr>
+
+				<tr>
+					<th>마케팅수신동의</th>
+					<td><input type="checkbox" id="chk1_1" class="type2">
+						<label for="chk1_1">이메일</label> <input type="checkbox" id="chk1_2"
+						class="type2"> <label for="chk1_2">SMS</label> <input
+						type="checkbox" id="chk1_3" class="type2"> <label
+						for="chk1_3">우편</label> <span class="info">마케팅 수신에 동의하실 경우
+							이메일,SMS 이벤트 정보를 받아보실 수 있습니다.</span></td>
+				</tr>
+
+
+			</tbody>
+		</table>
+
+		<h3 class="h3">회사정보</h3>
+		<table class="type1">
+			<caption></caption>
+			<colgroup>
+				<col style="width: 170px">
+				<col>
+			</colgroup>
+			<tbody>
+
+				<tr>
+					<th>사업분야</th>
+					<td><input type="text" style="width: 210px"></td>
+				</tr>
+
+				<tr>
+					<th><span>필수입력</span>회사명</th>
+					<td><input type="text" id="company" name="company_name"
+						style="width: 210px"></td>
+				</tr>
+
+				<tr>
+					<th><span>필수입력</span>회사코드</th>
+					<td><input type="text" id="cpCode" name="company_code"
+						style="width: 210px">
+						<button class="btn_type3" type="button" id="cpCodeChk"
+							onclick="fn_cpCodeChk();" value="N">인증</button> <span
+						class="info">회사코드 입력 후 인증 버튼을 클릭해주세요</span></td>
+				</tr>
+
+
+
+			</tbody>
+		</table>
+		<h3 class="h3">부서정보</h3>
+
+		<table class="type1">
+			<caption></caption>
+			<colgroup>
+				<col style="width: 170px">
+				<col>
+			</colgroup>
+			<tbody>
+
+				<tr>
+					<th><span>필수입력</span>부서명</th>
+					<td><input type="text" style="width: 210px" id="department"
+						name="department_name"></td>
+				</tr>
+
+				<tr>
+					<th><span>필수입력</span>부서코드</th>
+					<td><input type="text" id="dmCode" name="department_code"
+						style="width: 210px">
+						<button class="btn_type3" type="button" id="dmCodeChk"
+							onclick="fn_dmCodeChk();" value="N">인증</button> <span
+						class="info">부서코드 입력 후 인증 버튼을 클릭해주세요</span></td>
+				</tr>
+				<tr>
+					<th><span>필수입력</span>직급</th>
+					<td><input type="text" style="width: 210px" id="position"
+						name="position"></td>
+				</tr>
+
+			</tbody>
+		</table>
+
+
+		<div class="btn_center">
+			<input type="submit" class="btn_type1" value="회원가입"> <a
+				href="join1.html" class="btn_type2">취소</a>
+		</div>
+</div>
+</form>
+
+<p class="noti">타인의 정보 및 주민등록번호를 도용하여 가입하는 경우 3년 이하의 징역 또는 1천 만원 이하의
+	벌금에 처해지게 됩니다. 반드시 본인의 정보를 이용하여 가입해주시기 바랍니다.</p>
+
+<footer>
+	<div class="clear">
+		<a href="#header">TOP</a>
+		<div class="left">
+			<div>
+				<a href="#a">개인정보처리방침</a> <a href="#a">이용약관</a> <a href="#a">이메일무단수집거부</a>
+				<a href="#a">사이트맵</a>
+			</div>
+			<p>
+				회의록제목(주)<span></span>사업자번호 : 201-81-45685<span></span>대표자 : 비전공수준<br>
+				광주광역시 북구 용봉로 77(용봉동) 전남대학교 정보전산 멀티미디어실 <span></span>062-530-3728<span></span>Copyright
+				© 2020 haweulok Corporation., All rights reserved.
+			</p>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+
+header { padding: 0 30px 55px; background: linear-gradient(#f2f2f2);}
+
+.logo{ position: absolute;
+    background: url(../../images/logo.png);
+    top: 4px;
+    left: 40px;
+    width: 300px;
+    height: 80px;
+    z-index: 3;
+    padding: 0 0 0 300px; }
+
+.person{     height: 35px;
+    width: 35px;
+    padding: 0 0 0 40px;
+    background: #999;
+    margin: 0 auto;
+    left:380px;
+    top: 20px; background: url(../../images/person.png);}
+
+.three{    width: 250px;
+    margin-left: 1550px;
+    padding: 0;
+    /* margin-right: 0px; */
+    /* right: 0px; */}
+
+header .three ul{position: relative;
+    /* padding-top: 0px; */
+    z-index: 4;
+    bottom: 19px;} /* 상단 여백 10px */ 
+header .three ul li { display:inline; /* 세로나열을 가로나열로 변경 */ border-left:1px solid #999; /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */ font:bold 12px Dotum; /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */ padding:0 10px; /* 각 메뉴 간격 */ } 
+
+header .three ul li a{color: #fff; font-size: 18px;}
+
+.tonghab{    position: absolute;
+/*     left: 300px; */
+    top: 6px;
+    background: no-repeat;}
+    
+header div {position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    padding: 0 232px;
+    height: 80px;
+    width: 100%;
+    100%: ;
+    box-sizing: border-box;
+    background-color: #213043;
+    line-height: 120px;} 
+header div .user{    position: absolute;
+    background: no-repeat;
+    color: #fff;
+    font-size: 28px;
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+    height: 80px;
+    width: 700px;
+    font-size: 20px;
+    width: 700px;}
+header div .user span{position: relative; bottom: 20px;}    
+
+.menubar{
+    border: none;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    /* right: 100px; */
+/*     margin-right: 100px; */
+/*     margin-left: 1800px; */
+    margin-top: 16px;
+    background: no-repeat;
+}
+
+.menubar ul{
+   background: url(../../images/menubar.png);
+    height: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    background: no-repeat;
+}
+
+.menubar li{
+float:right;
+padding:0px;
+}
+
+.menubar li a{
+background: url(../../images/menubar.png);
+color:#cccccc;
+display:block;
+font-weight:normal;
+line-height:60px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+margin-left: 120px;}
+
+
+
+
+.menubar li ul{
+/* background: rgb(109,109,109); */
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+padding:0px;
+margin:0px;
+border:0px;
+position:absolute;
+width:200px;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+}
+
+
+.menubar li li {
+background: rgb(109,109,109);
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:170px;
+}
+
+
+
+.menubar li ul a{
+display:block;
+height:50px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+
+ 
+
+.contents { position:absolute; right:270px; width: 800px; margin-top: 100px; padding: 0 0 300px;}
+.contents3 { position:absolute; right:500px; width: 800px; margin-top: 100px; padding: 0 0 300px;}
+.h2 { position: relative; padding: 55px 0 53px; font-size: 36px;  line-height: 100%; text-align: center; font-weight: normal;}
+.h2:after { content: ""; position: absolute; left: 50%; bottom: 0; width: 50px; height: 1px; background: #aaa; transform: translateX(-50%);}
+.h2 + p { padding:46px 0 54px; font-size: 18px; color:#666; text-align: center; line-height: 30px;}
+.h3 { margin: 50px 0 20px; font-size:18px; color:#222; font-weight: normal; text-align: center;}
+.h3:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 4px; height: 4px; background: #00a5e1; vertical-align:5px;}
+
+
+
+
+.step { display: flex; border-top: 1px solid #aaa; border-bottom: 1px solid #aaa;}
+
+.step li { flex: 1; position: relative; padding: 22px 0; font-size: 11px; color:#a5a5a5; text-align: center; line-height: 100%;}
+.step li:after { content: ""; position: absolute; right: 0; top: 50%; width: 12px; height: 19px; transform: translate(-50%, -50%); background: url("../../images/icon.png") no-repeat -304px -58px;}
+.step li:last-child:after { display: none;}
+.step li div { padding: 8px 0 0; font-size: 18px; color:#a5a5a5;}
+.step li.on { color:#222;}
+.step li.on div { color:#00ade8;}
+
+
+
+
+/* 테이블 디자인*/
+input.type1 { position: absolute; left: -4000%;}
+
+table.type1{width: 500px;}
+.text1{position: relative; font-size: 30px; font-weight: none; color: #222; line-height: 85px; margin-left: 320px; font-weight: bold;}
+table.type1{border-top: 2px solid #042e6f; border-bottom: 1px solid #999; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
+table.type1 th,
+table.type1 td{border-top: 1px solid #ccc;  border-right: 1px solid #ccc;}
+table.type1 th :first-child{border-left: none;}
+table.type1 tr:first-child th,
+table.type1 tr:first-child td{border-top: none;}
+
+table.type1 th {display:inline-block; width:60px; line-height:30px; padding:10px; text-align: center; font-weight: normal; font-size:13px; color: #222;}
+table.type1 th.content{height: 500px; line-height: 500px;}
+table.type1 th.contents1{height: 60px; line-height: 60px;}
+table.type1 th.contents2{height: 50px; line-height: 50px;}
+
+table.type1 td{padding: 0px 30px; color: #777;} /*오버플로우 칼라 텍스트 투명하게 하기*/
+
+table.type1 td input[type="text"]{border:0; height: 38px; line-height: 38px; color: #000; }
+table.type1 th input[type="text"]{border:0; height: 38px; line-height: 38px;}
+
+
+table.type1 td >div{padding: 10px 0 0;}
+table.type1 td:first-child {padding: 0;} 
+
+table.type1 .col_width_10{width: 100%;}
+
+
+/*텍스트마이닝 디자인*/
+
+.keyword-item{position: absolute; top:60px; left:300px;}
+
+.menu .Mtext{width: 432px; height:288px; border-bottom: 1px solid #999; border-left: 1px solid #ccc; border-right: 1px solid #ccc; margin-bottom: 20px; border-top: 2px solid #042e6f; background: url(../../images/txt.png) }
+.menu .text2{display:block; position:relative; font-size: 22px; font-weight: none; color: #222; margin-top: 140px; margin-bottom: 10px;}
+.menu .script{width: 432px; height:700px; border-bottom: 1px solid #999; border-left: 1px solid #ccc; border-right: 1px solid #ccc;  border-top: 2px solid #042e6f;  }
+.menu .text3{display:block; margin:10px 0; font-size: 22px; font-weight: none; color: #222;}
+
+.btn{position:absolute; width:180px; height:50px; border: 0; right :590px; margin-top:1250px; cursor:pointer;
+ background-color: #042e6f; color: #fff; font-size: 18px;}
+.btn .d{position: absolute; padding: 0 0 0 60px; bottom: 14px; font-size: 18px; font-weight: normal;}
+
+
+
+
+
+/*버튼 디자인*/
+
+
+.back{       width: 100px;
+    height: 40px;
+    background-color: #999;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    line-height: 40px;
+    right: 20px}
+
+
+

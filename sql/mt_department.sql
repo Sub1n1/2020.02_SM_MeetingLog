@@ -1,0 +1,22 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 목요일-2월-27-2020   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table MT_DEPARTMENT
+--------------------------------------------------------
+
+  CREATE TABLE "HR"."MT_DEPARTMENT" 
+   (	"SEQ" NUMBER, 
+	"NAME" VARCHAR2(50 BYTE), 
+	"CODE" VARCHAR2(50 BYTE), 
+	"COMPANY_CODE" VARCHAR2(50 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+REM INSERTING into HR.MT_DEPARTMENT
+SET DEFINE OFF;
+Insert into HR.MT_DEPARTMENT (SEQ,NAME,CODE,COMPANY_CODE) values (1,'개발팀','SMDM02','SM0123');
+Insert into HR.MT_DEPARTMENT (SEQ,NAME,CODE,COMPANY_CODE) values (2,'마케팅','SMMA01','SM0123');
+Insert into HR.MT_DEPARTMENT (SEQ,NAME,CODE,COMPANY_CODE) values (3,'회계팀','JUHG01','JU0123');

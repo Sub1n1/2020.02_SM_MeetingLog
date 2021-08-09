@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+
+section.special, article.special {
+      text-align: center;
+   }
+
+
+
+.up{position:absolute; background-color:#999; background: url("../../iamages/upup.png")}
+
+
+footer { margin: 80px 0 0; background: #272f3c; height: 330px;}
+footer > div { position: relative; width:1175px; padding: 45px 0; margin: 0 auto;}
+footer > div > a { position: absolute; right: 0; top: -25px; width: 39px; height: 49px; background: url(../../images/icon.png) no-repeat -157px 8px #22a5d5; color:transparent;}
+footer > div .left { float: left; line-height: 100%;}
+footer > div .left div a { margin: 0 10px 0 0; font-size: 13px; color:#fff; }
+footer > div .left p { padding: 13px 0 0; line-height: 21px; font-size: 13px; color:#747b85;}
+footer > div .left p span { padding: 0 13px 0 0;}
+
+
+.contents { width: 1180px; margin: 0 auto;}
+.h2 { position: relative;     padding: 100px 0 53px; font-size: 36px;  line-height: 100%; text-align: center; font-weight: normal;}
+.h2:after { content: ""; position: absolute; left: 50%; bottom: 0; width: 50px; height: 1px; background: #aaa; transform: translateX(-50%);}
+.h2 + p { padding:46px 0 54px; font-size: 18px; color:#666; text-align: center; line-height: 30px;}
+.h3 { margin: 50px 0 20px; font-size:18px; color:#222; font-weight: normal;}
+.h3:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 4px; height: 4px; background: #00a5e1; vertical-align:5px;}
+.noti { font-size: 14px; color:#888; padding: 0 0 0 450px; line-height: 100px}
+.noti:before { content: ""; display: inline-block; margin: 0 3px 0 0; width: 15px; height: 15px; background: url("../../images/icon.png") no-repeat -336px -5px; vertical-align: -3px;}
+
+
+
+
+/*개인정보 입력 테이블*/
+
+input.type1 { position: absolute; left: -4000%;}
+input.type1 + label { font-size: 14px; color:#222; line-height: 27px;}
+input.type1 + label:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 27px; height: 27px; background: url("../../images/icon.png") no-repeat -97px -60px; vertical-align:-8px;}
+input.type1:checked + label:before { background-position:-129px -60px ;}
+
+
+input.type2 { position: absolute; left: -4000%;}
+input.type2 + label { font-size: 14px; color:#222; line-height: 27px; padding: 0 35px 0 0;}
+input.type2 + label:before { content: ""; display: inline-block; margin: 0 8px 0 0; width: 12px; height: 12px; background: url("../../images/icon.png") no-repeat -49px -60px; }
+input.type2:checked + label:before { background-position:-66px -60px ;}
+
+
+
+input.radio + label{ font-size: 14px; color:#222; line-height: 27px; padding: 0 20px 0 0;}
+input.radio + label:before { content: ""; display: inline-block; margin: 0 1px 0 0; width: 12px; height: 12px;  }
+
+
+table+.btn_center{padding: 50px 0 0;}
+
+.btn_center { text-align: center;}
+label + .btn_center { padding: 65px 0 0;}
+.btn_type1 { display: inline-block; width: 120px; height:45px; background: #042e6f; text-align: center; line-height: 45px; color:#fff; font-size: 13px;}
+.btn_type2 { display: inline-block; width: 120px; height:45px; background: #fff; text-align: center; line-height: 45px; color:#fff; font-size: 13px; border: 1px solid #042e6f;
+ box-sizing: border-box; vertical-align: middle; box-sizing: border-box; color: #042e6f; position: relative;}
+.btn_type3{display: inline-block; min-width: 102px; border: 2px solid #aaa; line-height: 38px; height:38px; padding: 0 10px;
+text-align: center; box-sizing: border-box; vertical-align: middle; }
+
+
+
+table.type1{border-top: 2px solid #042e6f; border-bottom: 1px solid #999;}
+table.type1 th,
+table.type1 td{height:40px; border-top: 1px solid #ccc; border-left: 1px solid #ccc;}
+table.type1 th :first-child{border-left: none;}
+table.type1 tr:first-child th,
+table.type1 tr:first-child td{border-top: none;}
+
+table.type1 th{padding:10px 10px 10px 45px; text-align: left; font-weight: normal; font-size:13px; color: #222;}
+table.type1 th span{overflow:hidden; display:inline-block; width:8px; height:7px; background: url('../../images/icon.png') no-repeat -534px -5px; color: transparent; vertical-align: 2px; margin: 0 6px 0 -14px;}
+table.type1 td{padding:10px 55px; color: #777;} /*오버플로우 칼라 텍스트 투명하게 하기*/
+table.type1 td input[type="text"],
+table.type1 td input[type="tel"],
+table.type1 td input[type="number"]{border: 1px solid #ccc; height: 38px; line-height: 38px;}
+table.type1 .info{}
+table.type1 .info:before { background: url('../../images/icon.png') no-repeat -336px -5px;  
+content: ""; display:inline-block; width: 15px; height: 14px; vertical-align: -2px; margin: 0 5px 0 13px;}
+table.type1 td >div{padding: 10px 0 0;}
+table.type1 td:first-child {padding: 0;} 
+table.type1 td.btn_type3{margin-left: 5px;}
+table.type1 td
